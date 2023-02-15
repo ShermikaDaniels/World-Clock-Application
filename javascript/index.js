@@ -12,7 +12,7 @@ function updateTime() {
 
   //Paris
   let parisElement = document.querySelector("#paris");
-  let parisDateElement = pairsElement.querySelector(".date");
+  let parisDateElement = parisElement.querySelector(".date");
   let parisTimeElement = parisElement.querySelector(".time");
   let parisTime = moment().tz("Europe/Paris");
 
