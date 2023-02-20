@@ -25,6 +25,19 @@ function updateTime() {
     );
   }
 
+  //Hawaii
+  let hawaiiElement = document.querySelector("#hawaii");
+  if (hawaiiElement) {
+    let hawaiiDateElement = hawaiiElement.querySelector(".date");
+    let hawaiiTimeElement = hawaiiElement.querySelector(".time");
+    let hawaiiTime = moment().tz("America/Hawaii");
+
+    hawaiiDateElement.innerHTML = hawaiiTime.format("MMMM	Do YYYY");
+    hawaiiTimeElement.innerHTML = hawaiiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   //London
   let londonElement = document.querySelector("#london");
   if (londonElement) {
