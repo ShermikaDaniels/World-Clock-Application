@@ -25,15 +25,15 @@ function updateTime() {
     );
   }
 
-  //Hawaii
-  let hawaiiElement = document.querySelector("#hawaii");
-  if (hawaiiElement) {
-    let hawaiiDateElement = hawaiiElement.querySelector(".date");
-    let hawaiiTimeElement = hawaiiElement.querySelector(".time");
-    let hawaiiTime = moment().tz("America/Hawaii");
+  //Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
 
-    hawaiiDateElement.innerHTML = hawaiiTime.format("MMMM	Do YYYY");
-    hawaiiTimeElement.innerHTML = hawaiiTime.format(
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM	Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
